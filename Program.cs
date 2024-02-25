@@ -9,3 +9,15 @@ for (int i = 0; i < array.Length; i++)
     Console.WriteLine($"Введите строку ({i + 1}/{sizeArray})");
     array[i] = Console.ReadLine();
 }
+// Вычисление размера под новый массив
+int sizeNewArray = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    int length = array[i].Length;
+    if (length <= 3)
+    {
+        sizeNewArray++;
+        //Проверка длины элемента массива и значние переменной sizeNewArray
+        // Console.WriteLine($"Длинна элемента {array[i]} = {length}. Значение sizeNewArray = {sizeNewArray}");
+    }
+}
